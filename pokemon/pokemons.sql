@@ -36,16 +36,17 @@ CREATE TABLE `pokemons` (
   `hp` int(11) DEFAULT NULL,
   `ataque` int(11) DEFAULT NULL,
   `defesa` int(11) DEFAULT NULL,
-  `observacoes` text DEFAULT NULL
+  `observacoes` text DEFAULT NULL,
+  `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `pokemons`
 --
 
-INSERT INTO `pokemons` (`id`, `nome`, `tipo`, `localizacao`, `data_registro`, `hp`, `ataque`, `defesa`, `observacoes`) VALUES
-(1, 'Pikachu', 'Elétrico', 'Campo', '2025-07-29', 30, 50, 30, 'Pikachu é um Pokémon do tipo Elétrico, conhecido por sua aparência fofa e poderes elétricos. Ele evolui de Pichu e pode evoluir para Raichu.'),
-(2, 'Charmander', 'Fogo', 'Cidade quente', '2025-07-29', 39, 52, 43, 'Muito agitado, solta pequenas chamas da cauda');
+INSERT INTO `pokemons` (`id`, `nome`, `tipo`, `localizacao`, `data_registro`, `hp`, `ataque`, `defesa`, `observacoes`, `foto`) VALUES
+(1, 'Pikachu', 'Elétrico', 'Campo', '2025-07-29', 30, 50, 30, 'Pikachu é um Pokémon do tipo Elétrico, conhecido por sua aparência fofa e poderes elétricos. Ele evolui de Pichu e pode evoluir para Raichu.', NULL),
+(2, 'Charmander', 'Fogo', 'Cidade quente', '2025-07-29', 39, 52, 43, 'Muito agitado, solta pequenas chamas da cauda', NULL);
 
 --
 -- Índices para tabelas despejadas
