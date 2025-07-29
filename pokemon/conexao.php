@@ -1,3 +1,4 @@
+<!-- Gabriel Moreira e Rian -->
 <?php
 $host = "localhost";
 $user = "root";
